@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 html{
 	box-sizing: border-box;
-	display: f
 }
 
 
@@ -96,7 +95,7 @@ html{
 	display: flex;
 	width: 90%;
 	margin: 5%;
-	vertical-align: middle;
+	vertical-align: center;
 }
 
 .header-img div{
@@ -269,25 +268,87 @@ h2{
 }
 
 /* change max to min to see mobile version*/
-@media only screen and (max-device-width: 480px) {
+
+@media (max-width: 800px) {
+    
+    .topnav {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+        padding: 0;
+    }
+	.topnav .logo {
+        order: -1;
+        break-after: always;
+        width: 100%;
+        justify-self: center;
+    }
+    .topnav .logo img {
+        width: 24%;
+        margin: 30px 38%;
+        
+    }
+    .header-img{
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+    .header-img div {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+        margin: 50px auto 0 auto;
+        padding: 0;
+    }
+    .header-img p {
+        font-size: 100%;
+        width: fit-content;
+        padding:  15px 25%;
+    }
+    .header-img img {
+        display: none;
+    }
+    h1 {
+        font-size: 400%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    
 	[class*="line"] {
 		width: 100%;
 		flex-wrap: wrap;
-		flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
 	}
 	[class*="ctntBox"] {
 		width: 100%;
     }
+    h1{
+        font-size: 200%;
+    }
     .topnav {
         position: relative;
         flex-direction: column;
-        justify-content: baseline;
+        justify-content: center;
         
         margin: auto;
         padding: 0;
     }
+    .topnav .logo img {
+        width: 50%;
+        margin: 0 auto;
+    }
     
     .topnav a {
+        
         font-size: 40px;
         margin: auto;
         padding: 0;
@@ -305,15 +366,5 @@ h2{
     #contact {
         border-bottom: 1px solid black;
     }
-    .header-img{
-        justify-content: center;
-    }
-    .header-img p {
-        font-size: 40px;
-        width: fit-content;
-        padding:  15px 100px;
-    }
-    .header-img img {
-        display: none;
-    }
+    
 }
