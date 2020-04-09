@@ -77,11 +77,11 @@ html{
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	background-color: lightskyblue;
-	width: 90%;
+	background-color: white;
+	
 	position: sticky;
-	margin-left: 5%;
-	padding-left: 5%;
+	margin-right: 5%;
+    padding-top: 30px;
 	top:0;
 }
 .topnav a{
@@ -89,7 +89,7 @@ html{
 	margin: auto 10px;
 	vertical-align: middle;
 	text-decoration: none;
-	color: lightgray;
+	color: darkgray;
 }
 
 .header-img{
@@ -277,5 +277,43 @@ h2{
 	}
 	[class*="ctntBox"] {
 		width: 100%;
-	}
+    }
+    .topnav {
+        position: relative;
+        flex-direction: column;
+        justify-content: baseline;
+        
+        margin: auto;
+        padding: 0;
+    }
+    
+    .topnav a {
+        font-size: 40px;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        padding: 20px 50px;
+        border-top: 1px solid black;
+
+    }
+    .logo {
+        order: -1;
+        margin: auto;
+        border-top: none;
+    }
+    #contact {
+        border-bottom: 1px solid black;
+    }
+    .header-img{
+        justify-content: center;
+    }
+    .header-img p {
+        font-size: 40px;
+        width: fit-content;
+        padding:  15px 100px;
+    }
+    .header-img img {
+        display: none;
+    }
 }
