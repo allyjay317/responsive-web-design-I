@@ -210,12 +210,14 @@ h1{
 
 .facts{
 	display: flex;
-	margin: 50px 5%;
+    margin: 50px 5%;
+    
 }
 
 .services-info-img{
 	width: 100%;
-	margin-left: 50px;
+    margin-left: 50px;
+    height: auto;
 }
 .factBox{
 	margin-right: 50px;
@@ -315,6 +317,14 @@ h2{
     h1 {
         font-size: 400%;
     }
+    .facts{
+        flex-direction: column;
+    }
+    .services-info-img {
+        order: -1;
+        break-after: always;
+        margin: 0 auto;
+    }
 
 }
 
@@ -330,6 +340,10 @@ h2{
 	}
 	[class*="ctntBox"] {
 		width: 100%;
+    }
+    .ctntBoxBordered{
+        width: 100%;
+        margin: 0 auto;
     }
     h1{
         font-size: 200%;
@@ -366,5 +380,7 @@ h2{
     #contact {
         border-bottom: 1px solid black;
     }
+    
+    
     
 }
